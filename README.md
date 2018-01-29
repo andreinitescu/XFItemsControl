@@ -63,3 +63,8 @@ I couldn't do this because `ItemsView` has an internal constructor!
 
 2. If you run the sample, you will see an issue with the demo main page. On Android, the `ItemsControl` overflows the lower StackPanel. This looks to be a problem because of `Grid` which still has issues in Xamarin Forms. 
 On iOS it's worse, the `ItemsControl` completely takes the whole `Grid`. I put a BackgroundColor on the StackLayout created implicitly by the ItemsControl https://github.com/andreinitescu/XFItemsControl/blob/master/XFItemsControl/XFItemsControl/ItemsControl.cs#L55 and I could see how the items inside the StackLayout overflow it! I haven't tried it yet on a real iOS device but it doesn't look like a simulator issue.
+
+# Is this production ready?
+
+Yes, if you don't need to update the items source :). Current implementation does not check and subscribe to observable collection.
+The other issue might be with the initial rendering I mentioned in point #2 in previous section. But if you explicitly set a `ItemsLayout` template, it works.
