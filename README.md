@@ -40,6 +40,8 @@ Or you can have your own layout to position items in a specific way. In this sam
 
 By default, `ItemsControl` uses a `StackLayout` to position the items. You don't need to set the `ItemsLayout` property if all you need is stacking items vertically.
 
+Being able to easily switch between how items are positioned can be extremely handy when you have a UI like a file explorer for example. The `Layout` makes it share and reuse layout logic.
+
 If the items layout template needs to be a more complicated hierarchy where the actual layout control is not the root, you need to set `IsItemsHost` property so that `ItemsControl` knows which is the actual layout where to add the items created by `ItemsSource` and `ItemTemplate`.
 
 It's not necessary to to set `IsItemsHost=True` if the root element of the data template is a `Layout<View>` derived class:
