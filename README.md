@@ -66,5 +66,5 @@ On iOS it's worse, the `ItemsControl` completely takes the whole `Grid`. I put a
 
 # Is this production ready?
 
-Yes, if you don't need to update the items source :). Current implementation does not check and subscribe to observable collection.
+I think so, if you don't need to update the items source :). Current implementation does not check and subscribe to observable collection.
 The other issue might be with the initial rendering I mentioned in point #2 in previous section. But if you explicitly set a `ItemsLayout` template, it works.
