@@ -38,7 +38,7 @@ It does not use any renderers.
 This allows displaying a bindable items source by any `Layout<View>` derived class. Xamarin Forms has some built-in layouts like `StackLayout`, `Grid`, `AbsoluteLayout`, `RelativeLayout`.
 Or you can have your own layout to position items in a specific way. In this sample app to demo the control I have a `WrapLayout`.
 
-By default, `ItemsControl` will use a `StackLayout` to position the items.
+By default, `ItemsControl` uses a `StackLayout` to position the items. You don't need to set the `ItemsLayout` property if all you need is stacking items vertically.
 
 If the items layout template needs to be a more complicated hierarchy where the actual layout control is not the root, you need to set `IsItemsHost` property so that `ItemsControl` knows which is the actual layout where to add the items created by `ItemsSource` and `ItemTemplate`.
 
