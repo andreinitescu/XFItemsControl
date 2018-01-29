@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:l="clr-namespace:XFItemsControl"
+             x:Class="XFItemsControl.App">
+	<Application.Resources>
+        <!--<Style TargetType="l:ItemsControl">
+            <Setter Property="ControlTemplate">
+                <ControlTemplate>
+                    <ContentPresenter />
+                </ControlTemplate>
+            </Setter>
+        </Style>-->
+    </Application.Resources>
+</Application>

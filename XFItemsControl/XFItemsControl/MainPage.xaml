@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFItemsControl"
+             x:Class="XFItemsControl.MainPage">
+    <ContentPage.Resources>
+        <!-- ItemsLayout templates -->
+        <ResourceDictionary>
+            <DataTemplate x:Key="VerticalStackLayoutTemplate">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout local:LayoutEx.IsItemsHost="True" />
+                </ScrollView>
+            </DataTemplate>
+
+            <DataTemplate x:Key="HorizontalStackLayoutTemplate">
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal"
+                                 local:LayoutEx.IsItemsHost="True" />
+                </ScrollView>
+            </DataTemplate>
+
+            <DataTemplate x:Key="WrapLayoutTemplate">
+                <ScrollView Orientation="Vertical">
+                    <local:WrapLayout IsSquare="True"
+                                      Spacing="10"
+                                      local:LayoutEx.IsItemsHost="True" />
+                </ScrollView>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <local:ItemsControl x:Name="_itemsControl"
+                            ItemsSource="{Binding Items}">
+            <local:ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Label BackgroundColor="Magenta"
+                           Text="{Binding }"
+                           WidthRequest="80"
+                           HeightRequest="50" />
+                </DataTemplate>
+            </local:ItemsControl.ItemTemplate>
+        </local:ItemsControl>
+
+        <StackLayout Grid.Row="1">
+            <!-- Had Xamarin Forms a property trigger, 
+                 I could use EventTrigger instead of click event handler-->
+            <Button Text="Set vertical stack layout"
+                    Clicked="SetVerticalStackLayout_Clicked" />
+            <Button Text="Set horizontal stack layout"
+                    Clicked="SetHorizontalStackLayout_Clicked" />
+            <Button Text="Set vertical wrap layout"
+                    Clicked="SetWrapLayout_Clicked" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
