@@ -1,7 +1,7 @@
 # Xamarin Forms ItemsControl
 
 A (very) naive tentative to implement an ItemsControl.
-If you don't know much about ItemsControl and its usefulness, read MSDN docs: https://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol(v=vs.110).aspx
+If you don't know much about ItemsControl and what it's for, read MSDN docs: https://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol(v=vs.110).aspx
 
 See video of this sample: https://www.youtube.com/watch?v=PMacCbmg51U
 
