@@ -6,6 +6,8 @@ If you don't know much about ItemsControl and what it's for, see the MSDN docs: 
 
 See video of this sample: https://www.youtube.com/watch?v=PMacCbmg51U
 
+## How it works
+
 It's a simple control with little logic, it has an `ItemsSource` and `ItemTemplate` properties to create child items, but it delegates their positioning to a `Layout<View>` instance.
 It does not use any renderers.
 
