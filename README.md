@@ -1,8 +1,9 @@
 # Xamarin Forms ItemsControl
 
-A simple implementation of the ItemsControl in Xamarin Forms.
+A simple implementation of the ItemsControl in Xamarin Forms. 
+It takes an items source, creates items based on item template, and positions the items using a layout instance.
 
-If you don't know much about ItemsControl and what it's for, see the MSDN docs: https://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol(v=vs.110).aspx
+If you're not familiar with ItemsControl in Windows XAML frameworks, see the MSDN docs: https://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol(v=vs.110).aspx
 
 See video of this sample: https://www.youtube.com/watch?v=PMacCbmg51U
 
