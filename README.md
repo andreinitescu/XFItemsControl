@@ -40,7 +40,7 @@ Or you can have your own layout to position items in a specific way. In this sam
 
 By default, `ItemsControl` will use a `StackLayout` to position the items.
 
-If the items layout template needs to be a more complicated hierarchy where the actual layout control is not the root, you need to set `IsItemsHost` property so that `ItemsControl` knows which is the actual layout where to add the items created by `ItemsSource` and `ItemTemplate`.
+If the items layout template needs to be a more complicated hierarchy where the actual layout control is not the root, you need to set `IsItemsHost` property so that `ItemsControl` knows which is the actual layout where to add the items created by `ItemsSource` and `ItemTemplate`. But if you just put a `Layout<View>` as the root of the `DataTemplate` it's not necessary to set `IsItemsHost`, the `ItemsControl` will take it as the layout.
 
   
  
